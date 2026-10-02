@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aravinthan A. — UI/UX Designer &amp; Full Stack Developer</title>
+<meta name="description" content="Portfolio of Aravinthan A. — UI/UX Designer, Digital Marketing Enthusiast and Full Stack Developer.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     LINK PLACEHOLDER GUIDE (search-and-replace friendly)
+     ------------------------------------------------------------
+     RESUME       -> YOUR_RESUME_LINK
+     GITHUB       -> YOUR_GITHUB_URL
+     LINKEDIN     -> YOUR_LINKEDIN_URL
+     EMAIL        -> YOUR_EMAIL
+     PROJECT 1    -> YOUR_LIVE_PROJECT_URL_1 / YOUR_GITHUB_URL_1
+     PROJECT 2    -> YOUR_LIVE_PROJECT_URL_2 / YOUR_GITHUB_URL_2
+     PROJECT 3    -> YOUR_LIVE_PROJECT_URL_3 / YOUR_GITHUB_URL_3
+     PROJECT 4    -> YOUR_LIVE_PROJECT_URL_4 / YOUR_GITHUB_URL_4
+     CERTIFICATE 1-5 -> YOUR_CERTIFICATE_LINK_1 ... _5
+     ============================================================ -->
+
+<!-- Skip link for accessibility -->
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ================= NAVIGATION ================= -->
+<header class="navbar" id="navbar">
+  <nav class="nav-container" aria-label="Primary navigation">
+    <a href="#hero" class="nav-logo">ARAVINTHAN A.</a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+      <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+      <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+      <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+      <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+      <li><a href="#certifications" class="nav-link" data-section="certifications">Certifications</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      <li>
+        <!-- Replace with your resume URL -->
+        <a href="YOUR_RESUME_LINK" target="_blank" rel="noopener noreferrer" class="btn-resume">Resume</a>
+      </li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-links">
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#education" class="mobile-link">Education</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#certifications" class="mobile-link">Certifications</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+      <li>
+        <a href="YOUR_RESUME_LINK" target="_blank" rel="noopener noreferrer" class="mobile-link mobile-resume">Resume</a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="hero">
+    <div class="grid-backdrop" aria-hidden="true"></div>
+
+    <div class="hero-container">
+      <div class="hero-left">
+        <p class="hero-eyebrow">Hello, I'm</p>
+        <h1 class="hero-name">ARAVINTHAN A.</h1>
+
+        <div class="hero-role">
+          <span id="typedRole"></span><span class="cursor" aria-hidden="true">|</span>
+        </div>
+
+        <p class="hero-statement">Designing intuitive experiences.<br>Building meaningful digital solutions.</p>
+
+        <p class="hero-desc">I create clean, intuitive and user-centered digital experiences by combining design, technology and creativity.</p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Let's Connect</a>
+        </div>
+
+        <div class="social-links" aria-label="Social media links">
+          <!-- Replace with your GitHub profile URL -->
+          <a href="YOUR_GITHUB_URL" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.75 5.48.75 11.75c0 5.02 3.26 9.27 7.78 10.77.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.17.69-3.84-1.34-3.84-1.34-.52-1.31-1.26-1.66-1.26-1.66-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.73 2.65 1.23 3.3.94.1-.74.4-1.23.72-1.51-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.06-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.14 1.17.91-.25 1.89-.38 2.86-.38.97 0 1.95.13 2.86.38 2.18-1.48 3.14-1.17 3.14-1.17.62 1.58.23 2.75.11 3.04.73.8 1.17 1.82 1.17 3.06 0 4.37-2.66 5.34-5.2 5.62.41.36.77 1.06.77 2.14 0 1.55-.01 2.79-.01 3.17 0 .3.2.66.79.55A11.26 11.26 0 0 0 23.25 11.75C23.25 5.48 18.27.5 12 .5Z"/></svg>
+          </a>
+          <!-- Replace with your LinkedIn profile URL -->
+          <a href="YOUR_LINKEDIN_URL" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+          </a>
+          <!-- Replace with your email address -->
+          <a href="mailto:YOUR_EMAIL" aria-label="Send an email" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm19 3.24-8.53 6.4a1 1 0 0 1-1.2 0L3 7.24V18h18V7.24ZM3.6 5l8.4 6.3L20.4 5H3.6Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-right" aria-hidden="true">
+        <div class="orb-glow"></div>
+
+        <div class="monogram">A</div>
+
+        <div class="float-card card-1">
+          <span class="dot"></span>
+          <div>
+            <p class="card-title">UI/UX</p>
+            <p class="card-sub">Design</p>
+          </div>
+        </div>
+
+        <div class="float-card card-2">
+          <span class="dot"></span>
+          <div>
+            <p class="card-title">Figma</p>
+            <p class="card-sub">Prototyping</p>
+          </div>
+        </div>
+
+        <div class="float-card card-3">
+          <span class="dot"></span>
+          <div>
+            <p class="card-title">Web Dev</p>
+            <p class="card-sub">Full Stack</p>
+          </div>
+        </div>
+
+        <div class="float-card card-4">
+          <span class="dot"></span>
+          <div>
+            <p class="card-title">Marketing</p>
+            <p class="card-sub">Digital</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue">
+      <span>Scroll to explore</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 4v16m0 0-6-6m6 6 6-6"/></svg>
+    </a>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="about" id="about">
+    <div class="section-container">
+      <h2 class="section-heading reveal">About Me</h2>
+
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <span class="about-index">01</span>
+          <p class="about-lead">Turning ideas into meaningful digital experiences</p>
+        </div>
+
+        <div class="about-right reveal">
+          <p class="about-text">I am an aspiring UI/UX Designer and Digital Marketing enthusiast with a strong interest in creating user-friendly digital experiences. I enjoy transforming ideas into visually appealing interfaces through wireframing, prototyping and modern design principles. I also have knowledge of web development and digital marketing, allowing me to understand both design and technology.</p>
+
+          <div class="about-cards">
+            <div class="info-card">
+              <p class="info-label">Education</p>
+              <p class="info-value">B.Tech – Information Technology</p>
+            </div>
+            <div class="info-card">
+              <p class="info-label">Focus</p>
+              <p class="info-value">UI/UX Design</p>
+            </div>
+            <div class="info-card">
+              <p class="info-label">Interests</p>
+              <p class="info-value">Digital Marketing</p>
+            </div>
+            <div class="info-card">
+              <p class="info-label">Development</p>
+              <p class="info-value">Full Stack Development</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EDUCATION ================= -->
+  <section class="education" id="education">
+    <div class="section-container">
+      <h2 class="section-heading reveal">Education</h2>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div class="timeline-card">
+            <p class="timeline-date">2023 – 2027</p>
+            <h3 class="timeline-title">B.Tech – Information Technology</h3>
+            <p class="timeline-org">E.G.S. Pillay Engineering College</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div class="timeline-card">
+            <p class="timeline-date">HSC</p>
+            <h3 class="timeline-title">Higher Secondary Certificate</h3>
+            <p class="timeline-org">Sambandham Hr Sec School</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE ================= -->
+  <section class="experience" id="experience">
+    <div class="section-container">
+      <h2 class="section-heading reveal">Experience</h2>
+
+      <article class="experience-card reveal">
+        <div class="experience-head">
+          <div>
+            <h3 class="experience-role">UI/UX Designer Intern</h3>
+            <p class="experience-org">JM Consultancy Services</p>
+          </div>
+          <p class="experience-date">Feb 2026 – May 2026</p>
+        </div>
+
+        <ul class="experience-list">
+          <li>UI/UX design</li>
+          <li>Figma wireframing</li>
+          <li>Prototyping</li>
+          <li>Poster design</li>
+          <li>Social media content</li>
+          <li>Supabase backend integration</li>
+          <li>Digital content design</li>
+        </ul>
+
+        <div class="tag-row">
+          <span class="tag">Figma</span>
+          <span class="tag">UI Design</span>
+          <span class="tag">UX Design</span>
+          <span class="tag">Wireframing</span>
+          <span class="tag">Prototyping</span>
+          <span class="tag">Supabase</span>
+          <span class="tag">Social Media Design</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section class="skills" id="skills">
+    <div class="section-container">
+      <h2 class="section-heading reveal">Skills &amp; Tools</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg>
+          </div>
+          <h3 class="skill-cat">UI/UX Design</h3>
+          <p class="skill-desc">Crafting intuitive, human-centered interfaces from research to prototype.</p>
+          <ul class="skill-list">
+            <li>Figma</li><li>Wireframing</li><li>Prototyping</li><li>UI Design</li><li>UX Design</li>
+          </ul>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m8 9-5 3 5 3M16 9l5 3-5 3M13 5l-2 14"/></svg>
+          </div>
+          <h3 class="skill-cat">Web Development</h3>
+          <p class="skill-desc">Building responsive, performant interfaces and applications.</p>
+          <ul class="skill-list">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li><li>Node.js</li><li>Express.js</li>
+          </ul>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.66 3.58 3 8 3s8-1.34 8-3V5M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3"/></svg>
+          </div>
+          <h3 class="skill-cat">Database</h3>
+          <p class="skill-desc">Designing and managing structured and unstructured data stores.</p>
+          <ul class="skill-list">
+            <li>MySQL</li><li>MongoDB</li><li>Supabase</li>
+          </ul>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 11l18-8-8 18-2-8-8-2Z"/></svg>
+          </div>
+          <h3 class="skill-cat">Digital Marketing</h3>
+          <p class="skill-desc">Creating campaigns and content that connect with audiences.</p>
+          <ul class="skill-list">
+            <li>Social Media Marketing</li><li>Content Creation</li><li>SEO Basics</li><li>Digital Promotion</li><li>Canva</li>
+          </ul>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94Z"/></svg>
+          </div>
+          <h3 class="skill-cat">Tools</h3>
+          <p class="skill-desc">The day-to-day toolkit for designing, shipping and versioning work.</p>
+          <ul class="skill-list">
+            <li>Figma</li><li>Canva</li><li>Git</li><li>GitHub</li><li>VS Code</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section class="projects" id="projects">
+    <div class="section-container">
+      <h2 class="section-heading reveal">Selected Projects</h2>
+      <p class="section-subheading reveal">Design. Develop. Deliver.</p>
+
+      <div class="project-filters reveal" role="tablist" aria-label="Filter projects by category">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-btn" data-filter="uiux" role="tab" aria-selected="false">UI/UX</button>
+        <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web</button>
+        <button class="filter-btn" data-filter="fullstack" role="tab" aria-selected="false">Full Stack</button>
+        <button class="filter-btn" data-filter="marketing" role="tab" aria-selected="false">Digital Marketing</button>
+      </div>
+
+      <div class="project-grid" id="projectGrid">
+
+        <!-- PROJECT 01 -->
+        <article class="project-card reveal" data-category="uiux fullstack">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=800&q=80" alt="Mockup screens for the Unsung Heroes platform" loading="lazy">
+            <span class="project-number">01</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Unsung Heroes – Tamil Freedom Leaders</h3>
+            <p class="project-desc">An interactive digital platform showcasing the stories and contributions of Tamil freedom leaders.</p>
+            <div class="tag-row">
+              <span class="tag">Figma</span>
+              <span class="tag">UI/UX</span>
+              <span class="tag">Supabase</span>
+            </div>
+            <div class="project-actions">
+              <!-- Replace with your live project URL -->
+              <a href="YOUR_LIVE_PROJECT_URL_1" target="_blank" rel="noopener noreferrer" class="project-link">View Project <span class="arrow">↗</span></a>
+              <!-- Replace with your GitHub repository URL -->
+              <a href="YOUR_GITHUB_URL_1" target="_blank" rel="noopener noreferrer" class="project-link project-link-secondary">GitHub <span class="arrow">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 02 -->
+        <article class="project-card reveal" data-category="web fullstack">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" alt="Dashboard mockup for the complaint tracking portal" loading="lazy">
+            <span class="project-number">02</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Public Complaint &amp; Issue Tracking Portal</h3>
+            <p class="project-desc">A web-based platform that allows users to submit complaints and track issue resolution.</p>
+            <div class="tag-row">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Express.js</span>
+              <span class="tag">Database</span>
+            </div>
+            <div class="project-actions">
+              <a href="YOUR_LIVE_PROJECT_URL_2" target="_blank" rel="noopener noreferrer" class="project-link">View Project <span class="arrow">↗</span></a>
+              <a href="YOUR_GITHUB_URL_2" target="_blank" rel="noopener noreferrer" class="project-link project-link-secondary">GitHub <span class="arrow">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 03 -->
+        <article class="project-card reveal" data-category="web fullstack">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=800&q=80" alt="Interface mockup for the blood donation management system" loading="lazy">
+            <span class="project-number">03</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Blood Donation Management</h3>
+            <p class="project-desc">A web platform designed to connect blood donors and recipients efficiently.</p>
+            <div class="tag-row">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">PHP</span>
+              <span class="tag">MySQL</span>
+            </div>
+            <div class="project-actions">
+              <a href="YOUR_LIVE_PROJECT_URL_3" target="_blank" rel="noopener noreferrer" class="project-link">View Project <span class="arrow">↗</span></a>
+              <a href="YOUR_GITHUB_URL_3" target="_blank" rel="noopener noreferrer" class="project-link project-link-secondary">GitHub <span class="arrow">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 04 -->
+        <article class="project-card reveal" data-category="marketing">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=800&q=80" alt="Social media campaign creatives" loading="lazy">
+            <span class="project-number">04</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Digital Marketing Campaign</h3>
+            <p class="project-desc">Creative digital promotional content designed for social media and online campaigns.</p>
+            <div class="tag-row">
+              <span class="tag">Canva</span>
+              <span class="tag">Social Media</span>
+              <span class="tag">Content Design</span>
+              <span class="tag">Digital Marketing</span>
+            </div>
+            <div class="project-actions">
+              <a href="YOUR_LIVE_PROJECT_URL_4" target="_blank" rel="noopener noreferrer" class="project-link">View Project <span class="arrow">↗</span></a>
+              <a href="YOUR_GITHUB_URL_4" target="_blank" rel="noopener noreferrer" class="project-link project-link-secondary">GitHub <span class="arrow">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="no-projects" id="noProjects" hidden>No projects in this category yet.</p>
+    </div>
+  </section>
+
+  <!-- ================= CERTIFICATIONS ================= -->
+  <section class="certifications" id="certifications">
+    <div class="section-container">
+      <h2 class="section-heading reveal">Certifications</h2>
+
+      <div class="cert-grid">
+
+        <article class="cert-card reveal">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 15a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z"/><path d="M8.5 13.5 7 21l5-2.5L17 21l-1.5-7.5"/></svg>
+          </div>
+          <h3 class="cert-name">UI/UX Mastery with AI</h3>
+          <p class="cert-org">Self-paced Program</p>
+          <p class="cert-date">May 2025</p>
+          <a href="YOUR_CERTIFICATE_LINK_1" target="_blank" rel="noopener noreferrer" class="certificate-btn">View Certificate <span class="arrow">↗</span></a>
+        </article>
+
+        <article class="cert-card reveal">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 15a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z"/><path d="M8.5 13.5 7 21l5-2.5L17 21l-1.5-7.5"/></svg>
+          </div>
+          <h3 class="cert-name">UI/UX Design Workshop</h3>
+          <p class="cert-org">Design Phoenix</p>
+          <p class="cert-date">2025</p>
+          <a href="YOUR_CERTIFICATE_LINK_2" target="_blank" rel="noopener noreferrer" class="certificate-btn">View Certificate <span class="arrow">↗</span></a>
+        </article>
+
+        <article class="cert-card reveal">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 15a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z"/><path d="M8.5 13.5 7 21l5-2.5L17 21l-1.5-7.5"/></svg>
+          </div>
+          <h3 class="cert-name">Full Stack Development</h3>
+          <p class="cert-org">Simplilearn</p>
+          <p class="cert-date">February 2026</p>
+          <a href="YOUR_CERTIFICATE_LINK_3" target="_blank" rel="noopener noreferrer" class="certificate-btn">View Certificate <span class="arrow">↗</span></a>
+        </article>
+
+        <article class="cert-card reveal">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 15a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z"/><path d="M8.5 13.5 7 21l5-2.5L17 21l-1.5-7.5"/></svg>
+          </div>
+          <h3 class="cert-name">RPA</h3>
+          <p class="cert-org">Infosys Springboard</p>
+          <p class="cert-date">September 2025</p>
+          <a href="YOUR_CERTIFICATE_LINK_4" target="_blank" rel="noopener noreferrer" class="certificate-btn">View Certificate <span class="arrow">↗</span></a>
+        </article>
+
+        <article class="cert-card reveal">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 15a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z"/><path d="M8.5 13.5 7 21l5-2.5L17 21l-1.5-7.5"/></svg>
+          </div>
+          <h3 class="cert-name">Essentials of C Programming</h3>
+          <p class="cert-org">EBOX</p>
+          <p class="cert-date">July 2024</p>
+          <a href="YOUR_CERTIFICATE_LINK_5" target="_blank" rel="noopener noreferrer" class="certificate-btn">View Certificate <span class="arrow">↗</span></a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DESIGN x MARKETING ================= -->
+  <section class="dxm" id="design-marketing">
+    <div class="section-container">
+      <h2 class="section-heading reveal">Design × Marketing</h2>
+      <p class="dxm-text reveal">Combining visual design with digital strategy to create content that captures attention and communicates clearly.</p>
+
+      <div class="dxm-grid reveal">
+        <div class="dxm-item dxm-tall">
+          <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600&q=80" alt="Social media creative sample" loading="lazy">
+        </div>
+        <div class="dxm-item">
+          <img src="https://images.unsplash.com/photo-1557838923-2985c318be48?w=600&q=80" alt="Poster design sample" loading="lazy">
+        </div>
+        <div class="dxm-item">
+          <img src="https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?w=600&q=80" alt="Campaign design sample" loading="lazy">
+        </div>
+        <div class="dxm-item">
+          <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=600&q=80" alt="Branding sample" loading="lazy">
+        </div>
+        <div class="dxm-item">
+          <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=600&q=80" alt="UI screen sample" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHY WORK WITH ME ================= -->
+  <section class="why" id="why">
+    <div class="section-container">
+      <h2 class="section-heading reveal">Why Work With Me</h2>
+
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <span class="why-index">01</span>
+          <h3 class="why-title">User-Centered</h3>
+          <p class="why-text">I focus on creating simple and intuitive experiences.</p>
+        </div>
+        <div class="why-card reveal">
+          <span class="why-index">02</span>
+          <h3 class="why-title">Creative</h3>
+          <p class="why-text">I enjoy transforming ideas into visually engaging designs.</p>
+        </div>
+        <div class="why-card reveal">
+          <span class="why-index">03</span>
+          <h3 class="why-title">Technical</h3>
+          <p class="why-text">I understand both design and web development.</p>
+        </div>
+        <div class="why-card reveal">
+          <span class="why-index">04</span>
+          <h3 class="why-title">Adaptive</h3>
+          <p class="why-text">I continuously learn new tools and technologies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="contact" id="contact">
+    <div class="section-container">
+      <h2 class="section-heading reveal">Let's Create Something Great</h2>
+      <p class="contact-text reveal">Have a project, opportunity or idea? Let's connect and build something meaningful.</p>
+
+      <div class="contact-grid">
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name">
+            <span class="form-error" id="nameError"></span>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email">
+            <span class="form-error" id="emailError"></span>
+          </div>
+
+          <div class="form-row">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject">
+            <span class="form-error" id="subjectError"></span>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">Send Message <span class="arrow">↗</span></button>
+
+          <p class="form-success" id="formSuccess" role="status" hidden>Thanks for reaching out — your message has been sent. I'll get back to you soon.</p>
+        </form>
+
+        <div class="contact-side reveal">
+          <a href="mailto:YOUR_EMAIL" class="contact-link">
+            <span class="contact-link-label">Email</span>
+            <span class="contact-link-value">YOUR_EMAIL</span>
+          </a>
+          <a href="YOUR_GITHUB_URL" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <span class="contact-link-label">GitHub</span>
+            <span class="contact-link-value">View Profile ↗</span>
+          </a>
+          <a href="YOUR_LINKEDIN_URL" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <span class="contact-link-label">LinkedIn</span>
+            <span class="contact-link-value">View Profile ↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="section-container footer-grid">
+    <div class="footer-brand">
+      <p class="footer-logo">ARAVINTHAN A.</p>
+      <p class="footer-tagline">Designing ideas into digital experiences.</p>
+      <div class="social-links footer-social">
+        <a href="YOUR_GITHUB_URL" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.75 5.48.75 11.75c0 5.02 3.26 9.27 7.78 10.77.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.17.69-3.84-1.34-3.84-1.34-.52-1.31-1.26-1.66-1.26-1.66-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.73 2.65 1.23 3.3.94.1-.74.4-1.23.72-1.51-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.06-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.14 1.17.91-.25 1.89-.38 2.86-.38.97 0 1.95.13 2.86.38 2.18-1.48 3.14-1.17 3.14-1.17.62 1.58.23 2.75.11 3.04.73.8 1.17 1.82 1.17 3.06 0 4.37-2.66 5.34-5.2 5.62.41.36.77 1.06.77 2.14 0 1.55-.01 2.79-.01 3.17 0 .3.2.66.79.55A11.26 11.26 0 0 0 23.25 11.75C23.25 5.48 18.27.5 12 .5Z"/></svg>
+        </a>
+        <a href="YOUR_LINKEDIN_URL" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+        </a>
+        <a href="mailto:YOUR_EMAIL" aria-label="Send an email" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm19 3.24-8.53 6.4a1 1 0 0 1-1.2 0L3 7.24V18h18V7.24ZM3.6 5l8.4 6.3L20.4 5H3.6Z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <p class="footer-copy">© 2026 Aravinthan A. All Rights Reserved.</p>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
